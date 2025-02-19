@@ -61,6 +61,13 @@ class Kontinens:
 
         return ossz_suruseg / len(self.lista)
 
+    def osszterulet(self):
+        ossz_terulet = 0
+        for orszag in self.lista:
+            ossz_terulet = ossz_terulet + orszag.terulet
+
+        return ossz_terulet
+
     def feladat_kiiras(self):
         nepesseg_feladat = self.legnepesebb_orszag()
         print(f"{self.kontinens} legnagyobb népességű országa: {nepesseg_feladat.info()}")
@@ -73,6 +80,9 @@ class Kontinens:
 
         atlag_suruseg = self.atlag_nepsuruseg()
         print(f"{self.kontinens} átlag népsűrűsége: {atlag_suruseg}")
+
+        ossz_terulet_feladat = self.osszterulet()
+        print(f"{self.kontinens} összterülete: {ossz_terulet_feladat} négyzetkilométer")
 
 
 europa = Kontinens("forrasok/europa.txt", "Európa")
