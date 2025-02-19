@@ -68,6 +68,9 @@ class Kontinens:
 
         return ossz_terulet
 
+    def median(self):
+        return self.lista[len(self.lista) - 1].nepesseg
+
     def feladat_kiiras(self):
         nepesseg_feladat = self.legnepesebb_orszag()
         print(f"{self.kontinens} legnagyobb népességű országa: {nepesseg_feladat.info()}")
@@ -79,10 +82,13 @@ class Kontinens:
         print(f"{self.kontinens} legnagyobb népsűrűségű országa: {nepsuruseg_feladat.info()}")
 
         atlag_suruseg = self.atlag_nepsuruseg()
-        print(f"{self.kontinens} átlag népsűrűsége: {atlag_suruseg}")
+        print(f"{self.kontinens} átlag népsűrűsége: {atlag_suruseg} km/2")
 
         ossz_terulet_feladat = self.osszterulet()
         print(f"{self.kontinens} összterülete: {ossz_terulet_feladat} négyzetkilométer")
+
+        median_feladat = self.median()
+        print(f"{self.kontinens} népességének a mediánja: {median_feladat} fő")
 
 
 europa = Kontinens("forrasok/europa.txt", "Európa")
