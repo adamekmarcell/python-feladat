@@ -71,6 +71,15 @@ class Kontinens:
     def median(self):
         return self.lista[len(self.lista) - 1].nepesseg
 
+    def nagyobb_mint_suruseg(self, filter):
+        eredmény_lista = []
+
+        for orszag in self.lista:
+            if orszag.nepsuruseg > filter:
+                eredmény_lista.append(orszag)
+
+        return eredmény_lista
+
     def feladat_kiiras(self):
         nepesseg_feladat = self.legnepesebb_orszag()
         print(f"{self.kontinens} legnagyobb népességű országa: {nepesseg_feladat.info()}")
@@ -89,6 +98,11 @@ class Kontinens:
 
         median_feladat = self.median()
         print(f"{self.kontinens} népességének a mediánja: {median_feladat} fő")
+
+        nepsuruseg_feladat_2 = self.nagyobb_mint_suruseg(150)
+        print(f"{self.kontinens} következő országainak kisebb a népsűrűsége mint 150 fő/km2:")
+        for orszag in nepsuruseg_feladat_2:
+            print(f"\t-{orszag.info()}")
 
 
 europa = Kontinens("forrasok/europa.txt", "Európa")
