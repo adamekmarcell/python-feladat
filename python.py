@@ -38,9 +38,20 @@ class Kontinens:
 
         return legnagyobb_nepessegu_orszag
 
+    def legnagyobb_terulet(self):
+        legnagyobb_orszag = Orszag()
+        for orszag in self.lista:
+            if orszag.terulet > legnagyobb_orszag.terulet:
+                legnagyobb_orszag = orszag
+
+        return legnagyobb_orszag
+
     def feladat_kiiras(self):
         nepesseg_feladat = self.legnepesebb_orszag()
-        print(f"{self.kontinens} legnagyobb népességű ország: {nepesseg_feladat.info()}")
+        print(f"{self.kontinens} legnagyobb népességű országa: {nepesseg_feladat.info()}")
+
+        terulet_feladat = self.legnagyobb_terulet()
+        print(f"{self.kontinens} legnagyobb területű országa: {terulet_feladat.info()}")
 
 europa = Kontinens("forrasok/europa.txt", "Európa")
 europa.feladat_kiiras()
