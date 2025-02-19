@@ -1,0 +1,36 @@
+orszag;fovaros;terulet(km2);nepesseg;nepsuruseg(fo/km2)
+Afganisztán;Kabul;652230;38900000;59.6
+Banglades;Bagdad;147570;166300000;1126
+Kína;Peking;9706961;1439000000;148.2
+India;Újdelhi;3287263;1380000000;420.2
+Indonézia;Dzsakarta;1904569;273000000;143.4
+Irán;Teherán;1648195;85000000;51.5
+Irak;Bagdad;438317;39300000;89.7
+Izrael;Jeruzsálem;20770;8900000;428.2
+Japán;Tokió;377975;126500000;334.5
+Jordánia;Amman;89342;10800000;121.0
+Kazahsztán;Nur-Szultan;2724900;18500000;6.8
+Kuvait;Kuvait;17818;4300000;240.6
+Libanon;Bejrút;10452;6800000;650.8
+Malajzia;Kuala Lumpur;330803;32000000;96.7
+Maldív-szigetek;Malé;300;450000;1333.3
+Mongólia;Ulan Bátor;1564116;3200000;2.0
+Mianmar;Janggon;676578;54000000;79.9
+Nepál;Katmandu;147516;29700000;202.3
+Omán;Muscat;309500;4600000;14.9
+Pakisztán;Islamabad;881913;225200000;255.4
+Fülöp-szigetek;Manila;342353;112100000;327.2
+Katar;Doha;11586;2800000;241.6
+Szaúd-Arábia;Rijád;2149690;33400000;15.5
+Szingapúr;Szingapúr;726;5900000;8141.9
+Dél-Korea;Szöul;100210;51800000;517.5
+Srí Lanka;Kolombo;65610;21400000;325.8
+Szíria;Damasszkusz;185180;16900000;91.3
+Tádzsikisztán;Dusambé;143100;8900000;62.2
+Thaiföld;Bangkok;513120;69400000;135.3
+Törökország;Ankara;783356;82000000;104.6
+Türkmenisztán;Asgabat;488100;5900000;12.1
+Egyesült Arab Emírségek;Abu-Dzabi;83600;9600000;114.7
+Üzbegisztán;Taskent;447400;33400000;74.6
+Vietnám;Hanoj;331212;97300000;293.8
+Jemen;Szanaa;527968;29800000;56.4

@@ -1,0 +1,31 @@
+orszag;fovaros;terulet(km2);nepesseg;nepsuruseg(fo/km2)
+Nigéria;Abuja;923768;206139587;223
+Egyiptom;Kairó;1002450;102334404;102
+Etiópia;Addisz-Abeba;1104300;114963588;104
+Kongoi Demokratikus Köztársaság;Kinshasa;2345410;89561403;38
+Tanzánia;Dodoma;947303;59734213;63
+Dél-Afrikai Köztársaság;Pretoria;1221037;59308690;48
+Kenya;Nairobi;580367;53771296;93
+Szudán;Kartúm;1886068;43849260;23
+Algéria;Algír;2381741;43851044;18
+Uganda;Kampala;241038;45741007;190
+Marokkó;Rabat;446550;36910560;83
+Angola;Luanda;1246700;32866272;26
+Mozambik;Maputo;801590;31255435;39
+Ghána;Accra;238533;31072940;130
+Madagaszkár;Antananarivo;587041;27691018;47
+Kamerun;Yaoundé;475442;26545863;56
+Niger;Niamey;1267000;24206636;19
+Mali;Bamako;1240192;20250834;16
+Botswana;Gaborone;582000;2351627;4
+Senegal;Dakar;196722;16743927;85
+Törökország;Ankara;783356;82003882;105
+Zimbabwe;Harare;390757;14899771;38
+Chad;Ndjamena;1284000;16425859;13
+Guinea;Conakry;245857;13132795;53
+Dél-Szudán;Dél-Szudán;644329;13130419;20
+Rwanda;Kigali;26338;12952218;492
+Benin;Porto-Novo;112000;12123200;108
+Tunézia;Tunisz;163610;11818619;72
+Burkina Faso;Ouagadougou;272967;20789601;76
+Szaúd-Arábia;Rijád;2149690;34947500;16
