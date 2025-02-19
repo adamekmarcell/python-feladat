@@ -30,6 +30,8 @@ class Kontinens:
 
             self.orszag_hozzaad(Orszag(adatok[0], adatok[1], int(adatok[2]), int(adatok[3]), float(adatok[4])))
 
+        self.lista.sort(key=lambda orszag: orszag.terulet)
+
     def legnepesebb_orszag(self):
         legnagyobb_nepessegu_orszag = Orszag()
         for orszag in self.lista:
@@ -99,9 +101,17 @@ class Kontinens:
         median_feladat = self.median()
         print(f"{self.kontinens} népességének a mediánja: {median_feladat} fő")
 
+        print()
+
         nepsuruseg_feladat_2 = self.nagyobb_mint_suruseg(150)
         print(f"{self.kontinens} következő országainak kisebb a népsűrűsége mint 150 fő/km2:")
         for orszag in nepsuruseg_feladat_2:
+            print(f"\t-{orszag.info()}")
+
+        print()
+
+        print(f"{self.kontinens} kontinens országai terület szerint növekvő sorrendben:")
+        for orszag in self.lista:
             print(f"\t-{orszag.info()}")
 
 
