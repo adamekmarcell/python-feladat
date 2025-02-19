@@ -81,6 +81,24 @@ class Kontinens:
                 eredmény_lista.append(orszag)
 
         return eredmény_lista
+    
+    def kisebb_mint_suruseg(self, filter):
+       eredmény_lista = []
+
+       for orszag in self.lista:
+           if orszag.nepsuruseg < filter:
+               eredmény_lista.append(orszag)
+
+       return eredmény_lista
+
+    def kozotti_suruseg(self, min, max):
+       eredmény_lista = []
+
+       for orszag in self.lista:
+           if orszag.nepsuruseg > min and orszag.nepsuruseg < max:
+               eredmény_lista.append(orszag)
+
+       return eredmény_lista
 
     def feladat_kiiras(self):
         nepesseg_feladat = self.legnepesebb_orszag()
@@ -113,6 +131,26 @@ class Kontinens:
         print(f"{self.kontinens} kontinens országai terület szerint növekvő sorrendben:")
         for orszag in self.lista:
             print(f"\t-{orszag.info()}")
+
+        kis_nepsuruseg = self.kisebb_mint_suruseg(100)
+        kozepes_nepsuruseg = self.kozotti_suruseg(100, 300)
+        nagy_nepsuruseg = self.nagyobb_mint_suruseg(300)
+
+        print()
+        print(f"{self.kontinens} alacsony népsűrűségű országai:")
+        for orszag in kis_nepsuruseg:
+            print(f"\t-{orszag.info()}")
+
+        print()
+        print(f"{self.kontinens} közepes népsűrűségű országai:")
+        for orszag in kozepes_nepsuruseg:
+            print(f"\t-{orszag.info()}")
+
+        print()
+        print(f"{self.kontinens} magas népsűrűségű országai:")
+        for orszag in nagy_nepsuruseg:
+            print(f"\t-{orszag.info()}")
+
 
 
 europa = Kontinens("forrasok/europa.txt", "Európa")
