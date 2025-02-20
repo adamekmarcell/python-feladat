@@ -163,8 +163,8 @@ azsia.feladat_kiiras()
 
 print()
 
-azsia = Kontinens("forrasok/afrika.txt", "Afrika")
-azsia.feladat_kiiras()
+afrika = Kontinens("forrasok/afrika.txt", "Afrika")
+afrika.feladat_kiiras()
 
 
 
